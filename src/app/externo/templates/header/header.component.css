@@ -1,0 +1,21 @@
+.btn-menu {
+    margin: 5px;
+    background-color: green;
+}
+
+.img-brand {
+    width: 150px;
+    height: 50px;
+}
+
+.menu {
+    background-color: #000200;
+}
+
+.align-right {
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+    justify-content: flex-start;
+}
