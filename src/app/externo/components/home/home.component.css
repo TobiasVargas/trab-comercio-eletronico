@@ -1,0 +1,44 @@
+.menu-lateral {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 18%;
+    margin-top: 0;
+    background-color: rgb(28, 39, 48);
+    color: white;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 82%;
+    overflow: scroll;
+    height: calc(100vh - 75px);
+}
+
+.product-card {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.home-index {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.buttons-product {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-ver-mais {
+    display: flex;
+    justify-content: center;
+}

@@ -1,6 +1,31 @@
-<mat-grid-list cols="5">
-    <mat-grid-tile colspan="1">
-        
-    </mat-grid-tile>
-    <mat-grid-tile colspan="4"></mat-grid-tile>
-</mat-grid-list>
+<div class="home-index">
+    <div class="menu-lateral">
+        <h3>Jogos Populares</h3>
+        <p *ngFor="let jogo of jogos">{{jogo}}</p>
+    </div>
+    <div class="produtos">
+        <mat-card class="product-card" *ngFor="let produto of produtos">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{ produto.nome }}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="{{ produto.imagem }}">
+            <p class="text-center">R$ {{ produto.preco }}</p>
+            <div class="btn-ver-mais">
+                <button mat-raised-button>Ver mais</button>
+            </div>
+            <mat-card-actions class="buttons-product">
+                <button mat-button>
+                    <span class="material-icons">
+                        favorite
+                    </span>
+                </button>
+                <button mat-button>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
