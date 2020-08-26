@@ -1,6 +1,7 @@
 export interface Produto{
     nome: string;
-    preco: number;
+    preco: string;
     estoque: number;
     imagem: string;
+    favorito: boolean;
 }

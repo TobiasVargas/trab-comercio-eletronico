@@ -21,6 +21,11 @@
 .product-card {
     margin: 10px;
     max-width: 200px;
+    padding: 15px;
+    border-radius: 6px;
+    border-color: black;
+    border: thin solid black;
+    /*box-shadow: 0.5px 0.5px 0.5px 1.2px;*/
 }
 
 .home-index {
@@ -33,6 +38,12 @@
     text-align: center;
 }
 
+.img-prod {
+    margin: 2px;
+    width: calc(100% - 4px);
+    height: 200px;
+}
+
 .buttons-product {
     display: flex;
     justify-content: center;
@@ -41,4 +52,13 @@
 .btn-ver-mais {
     display: flex;
     justify-content: center;
+}
+
+.item-jogo {
+    padding: 10px;
+    text-align: center;
+}
+
+.add-to-favorite {
+    color: red;
 }

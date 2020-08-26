@@ -1,11 +1,12 @@
 .btn-menu {
     margin: 5px;
-    background-color: green;
+    background-color: white;
 }
 
 .img-brand {
-    width: 150px;
-    height: 50px;
+    width: auto;
+    height: 55px;
+    padding: 15px;
 }
 
 .menu {
@@ -21,9 +22,11 @@
 
 .search {
     width: 270px;
-    height: 30px;
+    height: 33px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 6px;
+    border-color: black;
+    border: thin solid black;
     background-color:rgb(255, 254, 254);
     text-align: center;
 }
