@@ -6,17 +6,13 @@
         <div class="div-img-produto">
             <img src="{{ produto.imagem }}" class="img-produto">
             <div>
-                <img src="{{ produto.imagem }}" class="img-produto-thumb">
-                <img src="{{ produto.imagem }}" class="img-produto-thumb">
-                <img src="{{ produto.imagem }}" class="img-produto-thumb">
-                <img src="{{ produto.imagem }}" class="img-produto-thumb">
-                <img src="{{ produto.imagem }}" class="img-produto-thumb">
+                <img *ngFor="let img of produto.fotos" src="{{ img }}" class="img-produto-thumb">
             </div>
         </div>
         <div class="div-especificacao-produto">
-            <p>Marca: {{ produto.marca }}</p>
-            <p>Modelo: {{ produto.modelo }}</p>
             <div>
+                <p>Marca: {{ produto.marca }}</p>
+                <p>Modelo: {{ produto.modelo }}</p>
                 <p class="p-descricao">
                     {{ produto.descricao }}
                 </p>
