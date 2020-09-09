@@ -1,7 +1,7 @@
 export interface ProdutoCarrinho {
     id: number;
     nome: string;
-    preco_unitario: number;
+    preco_unitario: string;
     quantidade: number;
-    subtotal?: number;
+    subtotal?: string;
 }

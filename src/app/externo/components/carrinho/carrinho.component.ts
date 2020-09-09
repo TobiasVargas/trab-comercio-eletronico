@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../home/product.model';
+import { ProdutoCarrinho } from './produtoCarrinho.model';
 
 @Component({
   selector: 'app-carrinho',
@@ -8,7 +9,7 @@ import { Produto } from '../home/product.model';
 })
 export class CarrinhoComponent implements OnInit {
 
-  produtos_do_carrinho: Produto[];
+  produtos_do_carrinho: ProdutoCarrinho[];
   displayedColumns: string[] = ['produto', 'valor_unitario', 'quantidade', 'subtotal', 'acoes'];
   dataSource;
   constructor() { }
@@ -18,26 +19,23 @@ export class CarrinhoComponent implements OnInit {
       {
         id: 1,
         nome: 'PC Gamer',
-        preco: '3654,00',
-        estoque: 4,
-        imagem: 'https://images-americanas.b2w.io/produtos/01/00/img/46289/5/46289505_1GG.jpg',
-        favorito: true,
+        preco_unitario: '3152,76',
+        quantidade: 1,
+        subtotal: '3152,76',
       },
       {
         id: 2,
-        nome: 'Teclado',
-        preco: '199,85',
-        estoque: 4,
-        imagem: 'https://images.tcdn.com.br/img/img_prod/740836/teclado_gamer_pcfort_especial_para_jogos_3449_6_20200812083308.jpg',
-        favorito: false,
+        nome: 'Mousepad',
+        preco_unitario: '139,00',
+        quantidade: 1,
+        subtotal: '139,00',
       },
       {
-        id: 3,
-        nome: 'Headset',
-        preco: '186,15',
-        estoque: 4,
-        imagem: 'https://http2.mlstatic.com/fone-de-ouvido-pra-informatica-jogos-e-video-chamada-barato-D_NQ_NP_818473-MLB31672869742_082019-F.webp',
-        favorito: true,
+        id:3,
+        nome: 'Memória Ram',
+        preco_unitario: '349,00',
+        quantidade: 2,
+        subtotal: '698',
       }
     ]
     this.dataSource = this.produtos_do_carrinho;
