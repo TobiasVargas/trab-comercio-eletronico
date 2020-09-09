@@ -1,0 +1,22 @@
+.div-produtos-carrinho {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+table {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.p-valor-total {
+    text-align: right;
+    font-size: 17pt;
+}
+
+th {
+    text-align: center !important;
+}
+
+td {
+    text-align: center;
+}

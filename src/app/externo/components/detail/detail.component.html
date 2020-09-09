@@ -1,0 +1,71 @@
+<div>
+    <div class="div-voltar">
+        <button mat-raised-button (click)="voltar()">Voltar</button>
+    </div>
+    <div class="grupo-produto">
+        <div class="div-img-produto">
+            <img src="{{ produto.imagem }}" class="img-produto">
+            <div>
+                <img src="{{ produto.imagem }}" class="img-produto-thumb">
+                <img src="{{ produto.imagem }}" class="img-produto-thumb">
+                <img src="{{ produto.imagem }}" class="img-produto-thumb">
+                <img src="{{ produto.imagem }}" class="img-produto-thumb">
+                <img src="{{ produto.imagem }}" class="img-produto-thumb">
+            </div>
+        </div>
+        <div class="div-especificacao-produto">
+            <p>Marca</p>
+            <p>Modelo</p>
+            <div>
+                <p>Especificações</p>
+                <p>
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                    bla bla bla bla bla bla bla bla bla bla bla bla
+                     bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                     bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                     bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                     bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                </p>
+            </div>
+        </div>
+        <div class="div-info-produto">
+            <div class="info-produto">
+                <h1>{{ produto.nome }}</h1>
+                <h2>R$ {{ produto.preco }}</h2>
+                <h3>{{ produto.estoque }} unidades disponíveis</h3>
+            </div>
+            <div class="dados-produto">
+                <div>
+                    <mat-form-field>
+                        <mat-label>CEP</mat-label>
+                        <input matInput placeholder="">
+                    </mat-form-field>
+                </div>
+                <div class="row-carrinho">
+                    <button mat-raised-button color="primary">
+                        <span class="btn-carrinho">
+                            -
+                        </span>
+                    </button>
+                    <div class="input-carrinho">
+                        <span>1</span>
+                    </div>
+                    <button mat-raised-button color="primary">
+                        <span class="btn-carrinho">
+                            +
+                        </span>
+                    </button>
+                </div>
+                <div class="add-to-cart">
+                    <button mat-raised-button color="primary" class="btn-add-to-cart">
+                        <span class="material-icons">
+                            add_shopping_cart
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

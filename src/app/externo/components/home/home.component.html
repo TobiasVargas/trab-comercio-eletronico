@@ -12,7 +12,7 @@
             <img mat-card-image class="img-prod" src="{{ produto.imagem }}">
             <p class="text-center">R$ {{ produto.preco }}</p>
             <div class="btn-ver-mais">
-                <button mat-raised-button>Ver mais</button>
+                <button mat-raised-button (click)="ver_mais(produto.id)">Ver mais</button>
             </div>
             <mat-card-actions class="buttons-product">
                 <button mat-button>

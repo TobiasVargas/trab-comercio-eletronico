@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MatStepperModule } from '@angular/material/stepper';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './externo/templates/header/header.component';
@@ -13,13 +13,20 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { DetailComponent } from './externo/components/detail/detail.component';
+import { MatInputModule } from '@angular/material/input';
+import { CarrinhoComponent } from './externo/components/carrinho/carrinho.component';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    DetailComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatGridListModule,
     MatIconModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatListModule,
+    MatTableModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

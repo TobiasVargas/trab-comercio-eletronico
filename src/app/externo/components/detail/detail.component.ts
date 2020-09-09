@@ -1,34 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { Produto } from './product.model';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HomeComponent } from '../../components/home/home.component';
+import { Produto } from '../../components/home/product.model';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-detail',
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.css']
 })
-export class HomeComponent implements OnInit {
+export class DetailComponent implements OnInit {
 
-  jogos: string[];
+  produto: Produto;
   produtos: Produto[];
-
   constructor(
+    private route_active: ActivatedRoute,
     private router: Router
-  ) {
-    this.jogos = [
-      'Minecraft',
-      'Fortnite',
-      'Counter Strike Global Offensive',
-      'GTA IV',
-      'GTA V',
-      'Overwatch',
-      'League of Legends',
-      'Fifa 18',
-      'Dota 2',
-      'Dirt 3'
-    ]
+  ) { }
 
-    this.produtos = [
+  ngOnInit(): void {
+    this.produtos = this.produtos = [
       {
         id: 1,
         nome: 'PC Gamer',
@@ -94,14 +84,16 @@ export class HomeComponent implements OnInit {
         favorito: false,
       },
     ]
+    console.log(this.route_active.snapshot.paramMap.get('id'));
+    for (let i = 0; i < this.produtos.length; i++){
+      if (this.produtos[i].id === parseInt(this.route_active.snapshot.paramMap.get('id'))){
+        this.produto = this.produtos[i];
+      }
+    }
   }
-
-  ngOnInit(): void {
-  }
-
-  ver_mais(id) {
-    console.log(id);
-    this.router.navigateByUrl(`produto/${id}`);
+  
+  voltar(): void {
+    this .router.navigateByUrl('/');
   }
 
 }
