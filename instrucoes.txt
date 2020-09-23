@@ -1,0 +1,16 @@
+Projeto feito em angular 10
+
+Para rodar a aplicação é necessário o node instalado
+Após clonar o repositório executar o comando:
+
+npm install
+
+Com isso as dependencias serão instaladas
+
+Em seguida, rodar o comando
+
+ng serve --open
+
+A aplicação será compilada (transpilada de typescript para javascript) e estará disponível
+no browser em http://localhost:4200
+
