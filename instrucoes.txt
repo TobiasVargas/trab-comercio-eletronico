@@ -1,6 +1,14 @@
 Projeto feito em angular 10
 
 Para rodar a aplicação é necessário o node instalado
+Além disso o angular-cli deve ser instalado globalmente com o comando:
+
+npm install -g @angular/cli
+
+Pode ser necessário rodar com privilégios de administrador no linux:
+
+sudo npm install -g @angular/cli
+
 Após clonar o repositório executar o comando:
 
 npm install
